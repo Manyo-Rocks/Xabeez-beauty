@@ -69,8 +69,7 @@ header {
 .nav-menu a:hover,
 .nav-menu a:focus {
   color: var(--hoverColor);
-  background-color: #000;
-  padding: 0.75rem;
+  background-color: #59919c;
 }
 li.dropdown {
   display: inline-block;
@@ -133,23 +132,24 @@ li.dropdown {
   .toggle-button {
     display: flex;
   }
-  .nav-bar {
+  .nav-menu {
+    flex-direction: row;
+  }
+  .navbar-links {
     display: none;
   }
 
-  .nav-menu {
+  .navbar-links ul {
+    width: 50%;
     flex-direction: column;
   }
-  .nav-bar {
-    flex-direction: column;
-  }
-  .nav-bar li {
+  .navbar-links li {
     text-align: center;
   }
-  .nav-bar li a {
+  .navbar-links li a {
     padding: 0.5rem 1rem;
   }
-  .nav-bar.active {
+  .navbar-links.active {
     display: flex;
   }
 }
