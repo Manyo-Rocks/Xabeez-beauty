@@ -13,8 +13,8 @@
 }
 
 body {
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 0.75rem;
+  font-weight: 400;
 }
 
 /*-----typography-------*/
@@ -24,10 +24,7 @@ h3,
 h4 {
   font-weight: 400;
 }
-a {
-  text-decoration: none;
-  color: var(--linksColor);
-}
+
 a:hover {
   color: var(--hoverColor);
 }
@@ -68,8 +65,7 @@ header {
 }
 .nav-menu a:hover,
 .nav-menu a:focus {
-  color: var(--hoverColor);
-  background-color: #59919c;
+  border-bottom: #8ec2e0 0.125em solid;
 }
 li.dropdown {
   display: inline-block;
@@ -91,10 +87,6 @@ li.dropdown {
   text-decoration: none;
   display: block;
   text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #59919c;
 }
 
 .dropdown:hover .dropdown-content {
@@ -234,10 +226,10 @@ li.dropdown {
 }
 .about-info {
   width: 50%;
-  margin: 2rem;
+  margin: 1rem;
 }
 .about-info p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 .span {
