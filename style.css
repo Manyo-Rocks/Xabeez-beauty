@@ -93,6 +93,15 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.cart-items-no {
+  position: absolute;
+  border-radius: 50%;
+  background-color: red;
+  width: 20px;
+  top: 310px;
+  right: 245px;
+  margin: 0.25rem;
+}
 .Xabeex {
   text-align: center;
   color: lavender;
@@ -211,6 +220,10 @@ li.dropdown {
   color: #fff;
   padding: 0.25rem;
   text-decoration: none;
+}
+.caption:hover {
+  color: rgb(224, 110, 173);
+  padding: 0.75rem;
 }
 .categories img {
   opacity: 0.7;
