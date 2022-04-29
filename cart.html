@@ -57,50 +57,70 @@
 
     </header>
 
-    <h1>IF YOU KNOW BACKEND KINDLY FIX THIS</h1>
-   <!----<div class="cart-container">
-      <h1 class="carty">Your Cart Details</h1>
-      <div class="cart-body">
-        <table>
+    
+     <div class="cart-container">
+        <h4 class="carty">Your Cart Details</h4>
+     
+        <table class="cart-body">
           <thead>
             <tr>
-              <th class="uk-table-shrink"></th>
-              <th class="uk-table-small sty">
+              
+              <th class="table-heading">
                 <h3>ITEM</h3>
               </th>
-              <th class="uk-table-small"></th>
-              <th class="uk-width-small sty">
+              
+              <th class="table-heading">
                 <h3>PRICE</h3>
               </th>
-              <th class="uk-table-shrink uk-text-small sty">
+              <th class="table-heading">
                 <h3>QUANTITY</h3>
               </th>
-              <th class="uk-table-shrink uk-text-small sty">
+              <th colspan=2 class="table-heading">
                 <h3>TOTAL</h3>
               </th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><input class="uk-checkbox" type="checkbox"></td>
-              <td><img class="uk-preserve-width uk-border-circle" src="images/acessory10-min.jpg" width="40" alt="">
+              
+              <td class="table-body">
+                <img src="images/acessory10-min.jpg" width="60" alt="">
               </td>
-              <td class="uk-table-link">
-                <h3 class="item-name">heyo</h3>
+              <td class="table-body">
+                <h3>Seat & light</h3>
               </td>
-              <td class="uk-text-truncate item-price">
+              
+              <td class="table-body">
+                <input type='number' class='num' value='1'>
+              </td>
+              <td class="table-body">
                 <h3>$100</h3>
               </td>
-              <td><input type='number' class='num' value='1'></td>
-              <td class="uk-text-truncate total-price">
-                <h3>$100</h3>
+              <td>
+                <button class="table-body" type="button">Remove</button></td>
+            </tr>
+            <tr>
+              
+              <td class="table-body">
+                <img src="images/face2-min.jpg" width="60" alt="">
               </td>
-              <td><button class="uk-button uk-button-danger" type="button">Remove</button></td>
+              <td class="table-body">
+                <h3>may powder</h3>
+              </td>
+              
+              <td class="table-body">
+                <input type='number' class='num' value='1'>
+              </td>
+              <td class="table-body">
+                <h3>N5000</h3>
+              </td>
+              <td>
+                <button class="table-body" type="button">Remove</button></td>
             </tr>
           </tbody>
         </table>
+     
       </div>
-    </div>------>
 
     <!--------footer------>
     <div class="footer">
@@ -111,8 +131,7 @@
             <span>Get the latest beauty news, product samples and coupons in your inbox.</span>
             <div class="updates">
               <input class="send" type="text" id="email" name="email" placeholder="your email address">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-
+              <button type="submit" class="email-btn">submit</button> 
             </div>
 
 
