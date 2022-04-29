@@ -1,7 +1,7 @@
 :root {
   --mainColor: #0a3131ea;
   --secondaryColor: #d3d3d3;
-  --titleColor: #4d97a8;
+  --titleColor: #93a4aa;
   --linksColor: #f0ffff;
 }
 * {
@@ -26,6 +26,18 @@ h2,
 h3,
 h4 {
   font-weight: 300;
+}
+a:link{
+  color:var(--linksColor)
+}
+a:visited{
+  color: rgb(173, 123, 173);
+}
+a:hover{
+  color: cornflowerblue;
+}
+a:active{
+  color: blue;
 }
 
 /*-------header-------*/
@@ -173,16 +185,25 @@ a:hover .toggle-button {
 }
 
 /*------------New products------------*/
-
-.transition {
-  transition: width 1s, height 1s, transform 2s;
+marquee{
+  direction: right;
+  background-color: violet;
+ 
 }
 
-.transition:hover {
-  width: 300px;
-  height: 300px;
-  transform: rotate(360deg);
+.info{
+  display: flex;
 }
+.home-image img{
+  margin-top: 1rem;
+
+  max-width: 50%;
+  height: auto;
+  align-self: center;
+}
+
+
+
 .new-products {
   margin-top: 1rem;
 }
@@ -231,9 +252,7 @@ a:hover .toggle-button {
     flex-direction: column;
   }
 
-  .caption {
-    visibility: hidden;
-  }
+ 
   .col-4 {
     width: 90%;
     margin-top: 0.75rem;
@@ -254,83 +273,30 @@ a:hover .toggle-button {
 .row {
   padding: 1rem;
 }
-.caption {
-  position: absolute;
-  top: 95rem;
-  background-color: var(--mainColor);
-  text-align: center;
-  font-size: 1.5rem;
-  color: #fff;
-  padding: 0.25rem;
-  text-decoration: none;
-}
-.caption:hover {
-  padding: 0.75rem;
-  color: cornflowerblue;
-}
-.categories img {
-  opacity: 0.7;
+
+
+.categories a:hover{
+  opacity: 0.5;
+  
 }
 
 /*-----ABOUT PAGE------*/
-.about-section {
-  background-color: rgb(243, 229, 229);
-}
-.about {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  max-width: 100%;
-  width: 100%;
-}
-.about-info {
-  width: 30%;
-  padding-left: 1rem;
-}
-.about-info p {
-  font-weight: 400;
-  font-style: italic;
-}
-.span {
+.about{
   text-align: center;
-  font-size: 1.5rem;
-  width: 50%;
+}
+.about-section{
+ margin: auto;
+ width: 70%;
 }
 
-.about-image {
-  width: 70%;
-}
-.about-image img {
-  width: 90%;
-}
-.about-row {
-  text-align: center;
-  margin: 1rem;
-}
-.history {
-  text-transform: capitalize;
-}
-.history h4 {
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 1rem;
-}
+
+
+
+
 
 /*---media queries for about section (small size screens)---*/
 
-@media (max-width: 600px) {
-  .about,
-  .about-row {
-    flex-direction: column;
-  }
-  .about {
-    padding-top: 1.5rem;
-  }
-  .about-info,
-  .about-image {
-    width: 100%;
-  }
-}
+
 /*--------FACE CATEGORY------*/
 
 .row-1 {
@@ -434,8 +400,7 @@ button {
 }
 #contact-form {
   display: block;
-  background-color: var(--secondaryColor);
-  color: #000;
+  border: 1px solid rgb(3, 44, 44);;
   max-width: 100%;
   width: 50%;
   margin: 0 auto;
@@ -455,32 +420,59 @@ input {
   height: 50px;
 }
 #submit-btn {
-  background-color: black;
+  background-color: rgb(3, 44, 44);
   color: white;
   width: 100%;
   margin-top: 1rem;
+  
+}
+/*----------cart page--------*/
+.carty{
+  text-align: center;
+  margin: 1rem;
+
+}
+
+table{
+  margin: auto;
+  width: 80%;
+ margin-bottom: 2rem;
+}
+table, th, td {
+  border: 1px solid black;
+  padding: 10px
 }
 /*----------Footer-----*/
 .footer {
   background-color: var(--mainColor);
+  
 }
 .footer-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .footer-col-1 {
-  width: 50%;
+  width: 40%;
+  
 }
 .footer-col-1 p {
   font-size: 0.75rem;
 }
 .updates {
   display: flex;
+  column-gap: 10px;
 }
 .updates input {
   width: 50%;
 }
+.email-btn{
+  background-color: white;
+  color:black;
+  border-radius: 30%;
+  border: 2px solid black
+  
+} 
 
 .footer-col-2 {
   width: 25%;
@@ -496,12 +488,7 @@ input {
   display: inline-block;
   padding: 1rem;
 }
-.footer-col-2 li a:hover {
-  color: cornflowerblue;
-}
-.footer-col-3 li a:hover {
-  color: cornflowerblue;
-}
+
 .footer-bottom {
   text-align: center;
   padding: 2rem;
