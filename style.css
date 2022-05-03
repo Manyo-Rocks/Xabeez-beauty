@@ -1,8 +1,8 @@
 :root {
-  --mainColor: #0a3131ea;
-  --secondaryColor: #d3d3d3;
+  --mainColor: #2c4f5e;
+  --secondaryColor: #ee82ee;;
   --titleColor: #93a4aa;
-  --linksColor: #f0ffff;
+ 
 }
 * {
   padding: 0;
@@ -28,16 +28,17 @@ h4 {
   font-weight: 300;
 }
 a:link{
-  color:var(--linksColor)
+  color: #ffff
 }
 a:visited{
-  color: rgb(173, 123, 173);
+  color: rgb(156, 95, 156);
 }
 a:hover{
-  color: cornflowerblue;
+  color: rgb(156, 95, 156);
+
 }
 a:active{
-  color: blue;
+  color: rgb(51, 51, 66);
 }
 
 /*-------header-------*/
@@ -45,7 +46,9 @@ a:active{
   max-width: 100%;
 }
 header {
-  background-color: var(--mainColor);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.55);
   padding: 1.5rem;
 }
 .navigation {
@@ -54,7 +57,7 @@ header {
   align-items: center;
 }
 .nav-logo {
-  color: rgb(99, 88, 88);
+  color: rgb(146, 140, 140);
   font-style: bold;
   font-size: 1rem;
 }
@@ -70,17 +73,18 @@ header {
 
 .nav-menu a {
   text-decoration: none;
-  color: var(--linksColor);
+  color: black;
 }
 
 .menu-bar {
-  color: #f0ffff;
+  color: black;
   display: none;
   cursor: pointer;
 }
 .nav-bar a:hover,
 .nav-bar a:focus {
-  border-bottom: #8ec2e0 0.125em solid;
+  border-bottom: 2px solid black;
+  
 }
 li.dropdown {
   display: inline-block;
@@ -89,7 +93,7 @@ li.dropdown {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: var(--mainColor);
+  background-color: white;
   margin-bottom: 1rem;
   min-width: 16px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -97,7 +101,7 @@ li.dropdown {
 }
 
 .dropdown-content a {
-  color: white;
+  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -116,8 +120,8 @@ li.dropdown {
   right: 2rem;
   padding-left: 5%;
   border-radius: 50%;
-  background-color: rgb(249, 247, 252);
-  color: #ff0000;
+  background-color: black;
+  color: #ffff;
   width: 25px;
   padding: 3px;
   text-align: center;
@@ -138,7 +142,7 @@ li.dropdown {
   height: 3px;
   width: 100%;
   margin-right: 1rem;
-  background-color: white;
+  background-color: black;
   border-radius: 10px;
 }
 a:hover .toggle-button {
@@ -177,7 +181,7 @@ a:hover .toggle-button {
     left: 13rem;
     border-radius: 50%;
     background-color: rgb(249, 247, 252);
-    color: #ff0000;
+    color: #ca3e3e;
     width: 25px;
     padding: 3px;
     text-align: center;
@@ -187,21 +191,50 @@ a:hover .toggle-button {
 /*------------New products------------*/
 marquee{
   direction: right;
-  background-color: violet;
+  background-color: #ee82ee;
+ 
  
 }
-
-.info{
+.home{
   display: flex;
+  width: 100%;
+  background-color: rgb(253, 206, 241);
 }
+.home-info{
+  width: 50%;
+  text-align: center;
+  margin: auto;
+ border-top: 8px dotted white;
+border-bottom: 8px solid white;
+}
+.about-btn{
+  width: 50%;
+  font-size: 1rem;
+  background-color: #ee82ee;;
+  padding: 0.75em;
+  margin: 1rem;
+  box-shadow: -7px 6px 5px -5px rgba(0, 0, 0, 0.53);
+  -webkit-box-shadow: -7px 6px 5px -5px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: -7px 6px 5px -5px rgba(0, 0, 0, 0.53);
+}
+
 .home-image img{
   margin-top: 1rem;
-
   max-width: 50%;
   height: auto;
-  align-self: center;
+  
 }
-
+@media (max-width: 600px) {
+  .home{
+    display: flex;
+    flex-direction: column;
+  }
+  .home-info{
+    margin-top: 2.5em;
+    width: 90%;
+  }
+ 
+}
 
 
 .new-products {
@@ -275,9 +308,15 @@ marquee{
 }
 
 
-.categories a:hover{
-  opacity: 0.5;
+.categories a:hover {
+  opacity: 0.2;
+  background-color: rgb(230, 139, 207); ;
+}
+.cal{
   
+  background-color: rgb(253, 206, 241);
+ text-align: center;
+ 
 }
 
 /*-----ABOUT PAGE------*/
@@ -287,9 +326,12 @@ marquee{
 .about-section{
  margin: auto;
  width: 70%;
+ text-justify: distribute;
 }
 
-
+.about{
+  padding: 1.5em;
+}
 
 
 
@@ -321,7 +363,7 @@ button {
   padding: 0.125rem;
   background-color: var(--mainColor);
   color: #fff;
-  border: 1px solid var(--secondaryColor);
+  border: 1px solid var(--mainColor);
   padding: 0.25rem;
 }
 /*----MEDIA QUERIES FOR SMALL & MEDIUM SCREENS----*/
@@ -392,7 +434,9 @@ button {
 }
 
 /*--------contact form---*/
-
+.form-container{
+  margin-top: 1.5em;
+}
 .contact-title {
   font-size: 1.5rem;
   font-weight: 100;
@@ -410,20 +454,20 @@ button {
 }
 input {
   display: block;
-  width: 100%;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  width: 100%; 
   font-size: 14px;
+  padding: 0.75em;
 }
-#message {
+textarea {
   width: 100%;
   height: 50px;
+  resize: none;
 }
 #submit-btn {
-  background-color: rgb(3, 44, 44);
+  margin-top: 0.75rem;
   color: white;
-  width: 100%;
-  margin-top: 1rem;
+  background-color: var(--mainColor);
+ 
   
 }
 /*----------cart page--------*/
@@ -470,8 +514,8 @@ table, th, td {
   background-color: white;
   color:black;
   border-radius: 30%;
-  border: 2px solid black
-  
+  border: 2px solid rgb(150, 145, 145);
+ 
 } 
 
 .footer-col-2 {
